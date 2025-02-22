@@ -12,12 +12,10 @@ def generate_sensor_data():
     }
     return data
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     while True:
         sensor_data = generate_sensor_data()
         with open("sensor_data.json", "w") as file:
             json.dump(sensor_data, file, indent=4)
         print("Sensor data updated.")
         time.sleep(5)  # Simulate real-time updates
-
-
