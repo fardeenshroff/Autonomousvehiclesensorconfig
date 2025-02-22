@@ -1,14 +1,4 @@
-
-
-
-
-
-
-
 # Autonomous Vehicle Sensor Configuration
-
-## System Diagram
-![Autonomous Vehicle Sensor Configuration](images/uploadgithub.jpeg)
 
 ## Key Components
 
