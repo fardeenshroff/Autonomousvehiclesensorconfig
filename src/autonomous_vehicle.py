@@ -1,5 +1,5 @@
 class AutonomousVehicle:
-    def _init_(self):
+    def __init__(self):
         self.sensors = {
             "LiDAR": 4,
             "Radar": 6,
@@ -22,11 +22,11 @@ class AutonomousVehicle:
     
     def display_configuration(self):
         print("Autonomous Vehicle Sensor Configuration:")
-        for category, components in self._dict_.items():
+        for category, components in self.__dict__.items():
             print(f"\n{category}:")
             for key, value in components.items():
                 print(f"  - {key}: {value}")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     vehicle = AutonomousVehicle()
     vehicle.display_configuration()
